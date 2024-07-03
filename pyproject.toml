@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=70.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gabocutter"
+version = "0.0.1"
+authors = [
+  { name="Gabriel Torres Gamez", email="mail+github@torres.swiss" },
+]
+description = "My heavily opinionated cookiecutter template.."
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "setuptools>=70.0.0",
+    "pytest>=7.3.1",
+]
+
+[project.urls]
+Homepage = "https://github.com/gabrieltorresgamez/gabocutter"
+Issues = "https://github.com/gabrieltorresgamez/gabocutter/issues"

@@ -1,0 +1,16 @@
+services:
+  gabocutter:
+    container_name: gabocutter
+    #restart: unless-stopped
+    #tty: true
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    volumes:
+      - type: bind
+        source: ./
+        target: /app
+    #environment:
+    #  - TEST=1
+    #ports:
+    #  - "8080:8080"

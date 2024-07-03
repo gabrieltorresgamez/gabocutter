@@ -1,0 +1,29 @@
+name: Test Docker image
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: Build Docker image
+      run: docker build -t gabocutter-test .
+
+  test:
+      
+      runs-on: ubuntu-latest
+  
+      needs: build
+  
+      steps:
+      - uses: actions/checkout@v4
+      - name: Test Docker image
+        run: docker run gabocutter-test
