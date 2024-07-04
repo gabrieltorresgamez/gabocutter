@@ -1,0 +1,11 @@
+Import Package
+```{python}
+import gabocutter
+gabocutter.utils.misc.get_hello_world()
+```
+
+Import Function
+```{python}
+from gabocutter.utils.misc import *
+get_hello_world()
+```
