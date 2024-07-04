@@ -10,7 +10,7 @@ My heavily opinionated cookiecutter template.
 5. Congratulations! You can start working on your project.
 6. OPTIONAL: Setup a Sphinx project for code documentation.
  
-## Project Organization
+## Structure
 
     ├── .github/workflows  <- Github actions workflows.
     ├── data
