@@ -8,6 +8,7 @@ My heavily opinionated cookiecutter template.
 3. Change the `pyproject.toml` file to your liking.
 4. If not needed, remove the docker related files.
 5. Congratulations! You can start working on your project.
+6. OPTIONAL: Setup a Sphinx project for code documentation.
  
 ## Project Organization
 
