@@ -1,23 +1,18 @@
 [project]
-name = "cookiecutter-uv"
+name = "gabocutter"
 version = "0.0.1"
-description = "A python cookiecutter application to create a new python project that uses uv to manage its dependencies."
-authors = [{ name = "Florian Maas", email = "fpgmaas@gmail.com" }]
+description = "My cookiecutter template for data science projects."
+authors = [{ name = "Gabriel Torres Gamez", email = "gabriel.torres@fuet.ch" }]
 readme = "README.md"
-keywords = ['cookiecutter', 'template', 'uv']
-requires-python = ">=3.9,<4.0"
+keywords = ['cookiecutter', 'template', 'uv', 'datascience']
+requires-python = ">=3.12,<4.0"
 dependencies = [
   "cookiecutter>=2.1.1"
 ]
 classifiers = [
-    "Development Status :: 4 - Beta",
     "Intended Audience :: Developers",
     "License :: OSI Approved :: MIT License",
     "Programming Language :: Python",
-    "Programming Language :: Python :: 3",
-    "Programming Language :: Python :: 3.9",
-    "Programming Language :: Python :: 3.10",
-    "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
     "Programming Language :: Python :: 3.13",
     "Topic :: Software Development :: Libraries :: Python Modules",
@@ -26,19 +21,14 @@ classifiers = [
 
 
 [project.urls]
-Repository = "https://github.com/fpgmaas/cookiecutter-uv"
-Documentation = "https://fpgmaas.github.io/cookiecutter-uv/"
-Homepage = "https://fpgmaas.github.io/cookiecutter-uv/"
+Repository = "https://github.com/gabrieltorresgamez/gabocutter"
+Documentation = "https://gabrieltorresgamez.github.io/gabocutter/"
+Homepage = "https://gabrieltorresgamez.github.io/gabocutter/"
 
 [dependency-groups]
 dev = [
     "pytest>=7.2.0",
-    "pre-commit>=2.20.0",
     "pytest-cookies>=0.6.1",
-    "tox-uv>=1.11.3",
-    "deptry>=0.20.0",
-    "mypy>=0.991",
-    "pytest-cov>=4.0.0",
     "ruff>=0.6.9",
     "mkdocs>=1.4.2",
     "mkdocs-material>=8.5.10",
@@ -50,38 +40,13 @@ requires = ["setuptools >= 61.0"]
 build-backend = "setuptools.build_meta"
 
 [tool.setuptools]
-packages = ["cookiecutter_uv"]
+packages = ["gabocutter"]
 
 [tool.setuptools.package-data]
-"cookiecutter_uv" = ["*"]
+"gabocutter" = ["*"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
-
-[tool.coverage.report]
-skip_empty = true
-
-[tool.coverage.run]
-branch = true
-source = ["cookiecutter_uv"]
-
-[tool.mypy]
-files = ['cookiecutter_uv']
-disallow_untyped_defs = true
-disallow_any_unimported = true
-no_implicit_optional = true
-check_untyped_defs = true
-warn_return_any = true
-warn_unused_ignores = true
-show_error_codes = true
-
-[tool.deptry]
-extend_exclude = [
-  ".+/test_foo.py"
-]
-
-[tool.deptry.per_rule_ignores]
-DEP002 = ["cookiecutter"]
 
 [tool.ruff]
 target-version = "py39"

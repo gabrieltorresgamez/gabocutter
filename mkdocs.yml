@@ -1,26 +1,22 @@
-site_name: cookiecutter-uv
-repo_url: https://github.com/fpgmaas/cookiecutter-uv
-site_url: https://fpgmaas.github.io/cookiecutter-uv
-site_description: A cookiecutter template for Python projects that use uv for its dependency management
-site_author: Florian Maas
+site_name: gabocutter
+repo_url: https://github.com/gabrieltorresgamez/gabocutter
+site_url: https://gabrieltorresgamez.github.io/gabocutter
+site_description: My cookiecutter template for data science projects.
+site_author: Gabriel Torres Gamez
 edit_uri: edit/main/docs/
-repo_name: fpgmaas/cookiecutter-uv
-copyright: Maintained by <a href="https://fpgmaas.com">Florian</a>.
+repo_name: gabrieltorresgamez/gabocutter
+copyright: Maintained by <a href="https://torres.swiss">Gabriel Torres Gamez</a>.
 
 nav:
   - Home: index.md
   - Features:
       - CI/CD with Github Actions: features/cicd.md
-      - Linting & code quality: features/linting.md
+      - Linting: features/linting.md
       - Makefile: features/makefile.md
       - Dependency management with uv: features/uv.md
-      - Publishing to PyPI: features/publishing.md
       - Testing with Pytest: features/pytest.md
-      - Test coverage with codecov: features/codecov.md
       - Documentation with MkDocs: features/mkdocs.md
-      - Compatibility testing with Tox: features/tox.md
       - Containerization with Docker: features/docker.md
-      - Devcontainer with VSCode: features/devcontainer.md
   - Tutorial: tutorial.md
   - Prompt Arguments: prompt_arguments.md
 plugins:
@@ -54,9 +50,7 @@ theme:
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/fpgmaas/cookiecutter-uv
-    - icon: fontawesome/brands/python
-      link: https://pypi.org/project/cookiecutter-uv/
+      link: https://github.com/gabrieltorresgamez/gabocutter
 markdown_extensions:
   - toc:
       permalink: true
