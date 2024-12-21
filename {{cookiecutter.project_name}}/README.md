@@ -59,5 +59,7 @@ The CI/CD pipeline will be triggered everytime you push to the `main` branch.
     ├── Dockerfile         <- Dockerfile for the Docker image.
     ├── LICENSE            <- MIT License.
     ├── Makefile           <- Makefile with commands like `make install` or `make test`.
+    ├── mkdocs.yml         <- MkDocs configuration.
     ├── pyproject.toml     <- Package build configuration.
-    └── README.md          <- The top-level README for this project.
+    ├── README.md          <- The top-level README for this project.
+    └── uv.lock            <- Lock file for uv.
