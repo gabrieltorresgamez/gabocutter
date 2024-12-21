@@ -4,6 +4,11 @@ install: ## Install the virtual environment and install the pre-commit hooks
 	@uv sync
 	@uv run pre-commit install
 
+.PHONY: check
+check: ## Run ruff checks
+	@echo "🚀 Running ruff checks"
+	@uv run python -m ruff check
+
 .PHONY: test
 test: ## Test the code with pytest
 	@echo "🚀 Testing code: Running pytest"

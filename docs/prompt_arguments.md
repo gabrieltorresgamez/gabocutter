@@ -35,26 +35,4 @@ from <project_slug> import foo
 
 A short description of your project.
 
-**include_github_actions**
-
-`"y"` or `"n"`. Adds a `.github` directory with various actions and
-workflows to setup the environment and run code formatting checks
-and unittests.
-
-**mkdocs**
-
-`"y"` or `"n"`. Adds [MkDocs](https://www.mkdocs.org/)
-documentation to your project. This includes automatically parsing
-your docstrings and adding them to the documentation. Documentation
-will be deployed to the `gh-pages` branch.
-
-**dockerfile**
-
-`"y"` or `"n"`. Adds a simple [Dockerfile](https://docker.com).
-
-**open_source_license**
-
-Choose a [license](https://choosealicense.com/). Options:
-`["1. MIT License", "2. BSD license", "3. ISC license",  "4. Apache Software License 2.0", "5. GNU General Public License v3", "6. Not open source"]`
-
 ---

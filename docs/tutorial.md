@@ -65,8 +65,8 @@ To enable your documentation on GitHub, first navigate to `Settings > Actions > 
 
 ## Step 7: Enable your documentation ct'd
 
-Then navigate to `Settings > Code and Automation > Pages`. If you succesfully created a new release,
-you should see a notification saying ` Your site is ready to be published at https://<author_github_handle>.github.io/<project_name>/`.
+Then navigate to `Settings > Code and Automation > Pages`. 
+You should see a notification saying ` Your site is ready to be published at https://<author_github_handle>.github.io/<project_name>/`.
 
 To finalize deploying your documentation, under `Source`, select the branch `gh-pages`.
 

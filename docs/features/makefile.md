@@ -7,7 +7,7 @@ available:
 
 ```
 install              Install the uv environment
-check                Lint code by running ruff.
+check                Lint code by running ruff
 test                 Test the code with pytest
 build                Build wheel file using uv
 clean-build          clean build artifacts

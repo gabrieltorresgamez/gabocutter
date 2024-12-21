@@ -62,8 +62,3 @@ preview = true
 [tool.ruff.per-file-ignores]
 "tests/*" = ["S101"]
 ```
-
-## Github Actions
-
-If `include_github_actions` is set to `"y"`, code formatting is checked
-for every merge request, every merge to main, and every release.

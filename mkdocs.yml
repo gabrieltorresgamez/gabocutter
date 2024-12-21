@@ -10,7 +10,6 @@ copyright: Maintained by <a href="https://torres.swiss">Gabriel Torres Gamez</a>
 nav:
   - Home: index.md
   - Features:
-      - CI/CD with Github Actions: features/cicd.md
       - Linting: features/linting.md
       - Makefile: features/makefile.md
       - Dependency management with uv: features/uv.md
