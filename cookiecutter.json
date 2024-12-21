@@ -1,7 +1,7 @@
 {
     "author": "Firstname Lastname",
     "email": "example@example.com",
-    "author_github_handle": "example",
+    "author_github_handle": "github_handle",
     "project_name": "example-project",
     "project_slug": "{{cookiecutter.project_name|lower|replace('-', '_')}}",
     "project_description": "A short description of the project"
