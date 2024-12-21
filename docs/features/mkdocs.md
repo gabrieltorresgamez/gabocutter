@@ -1,12 +1,5 @@
 # Documentation with MkDocs
 
-If `mkdocs` is set to `"y"`, documentation of your project is
-automatically added using
-[MkDocs](https://www.mkdocs.org/). Next to that, if
-`"include_github_actions"` is set to `"y"`, the documentation is
-automatically deployed to your `gh-pages` branch, and made available at
-`https://<github_handle>.github.io/<project_name>/`.
-
 To view the documentation locally, simply run
 
 ```bash
@@ -27,11 +20,8 @@ To finalize deploying your documentation, under `Source`, select the branch `gh-
 
 ## Documenting docstrings
 
-The generated project also converts all
-your docstrings into legible documentation. By default, the project is
-configured to work with
-[google](https://google.github.io/styleguide/pyguide.html) style
-docstrings.
+The generated project also converts all your docstrings into legible documentation. By default, the project is
+configured to work with [google](https://google.github.io/styleguide/pyguide.html) style docstrings.
 
 An example of a Google style docstring:
 

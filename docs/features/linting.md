@@ -1,6 +1,6 @@
 # Linting and code quality
 
-Code can be linted and quality-checked with the command
+Code can be checked with the command
 
 ```bash
 make check
