@@ -1,23 +1,27 @@
-name: Main
-
-on:
-  pull_request:
-    types: [opened, synchronize, reopened]
-  push:
-    branches: [main]
+name: main
+on: [push]
 
 jobs:
-  quality:
+  check-tests:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.12", "3.13"]
+      fail-fast: false
+    defaults:
+      run:
+        shell: bash
     steps:
       - name: Check out
         uses: actions/checkout@v4
 
       - name: Set up the environment
         uses: ./.github/actions/setup-python-env
+        with:
+          python-version: {% raw %}${{ matrix.python-version }}{% endraw %}
 
-      - name: Check lock file consistency
-        run: uv sync --locked
+      - name: Run tests
+        run: uv run python -m pytest 
 
   check-docs:
     runs-on: ubuntu-latest
