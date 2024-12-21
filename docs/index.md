@@ -28,6 +28,6 @@ Follow the prompts to configure your project. Once completed, a new directory co
 
 ### Acknowledgements
 
-This project is partially based on [Florian Maas\'s](https://github.com/fpgmaas)\'s 
+This project is partially based on [Florian Maas's](https://github.com/fpgmaas)
 [cookiecutter-uv](https://github.com/fpgmaas/cookiecutter-uv)
 repository. It has been simplified and adjusted to my personal preferences.
