@@ -1,4 +1,4 @@
-This is a modern Cookiecutter template that can be used to initiate a Python project with all the necessary tools for development and testing. It supports the following features:
+This is a modern Cookiecutter template that can be used to initiate a Python project with all the necessary tools for development and testing. It has been developed for data science use cases. It supports the following features:
 
 - [uv](https://docs.astral.sh/uv/) for dependency management
 - CI/CD with [GitHub Actions](https://github.com/features/actions)
