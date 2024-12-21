@@ -26,6 +26,8 @@ theme:
   name: material
   feature:
     tabs: true
+  features:
+    - content.code.copy
   palette:
     # Note: Using the system theme works with the insiders version
     # https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/#automatic-light-dark-mode
@@ -50,8 +52,16 @@ extra:
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/gabrieltorresgamez/gabocutter
+
 markdown_extensions:
   - toc:
       permalink: true
   - pymdownx.arithmatex:
       generic: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences

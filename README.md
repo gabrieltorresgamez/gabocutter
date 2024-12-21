@@ -30,7 +30,7 @@ pip install cookiecutter
 cookiecutter https://github.com/gabrieltorresgamez/gabocutter.git
 ```
 
-Follow the prompts to configure your project. Once completed, a new directory containing your project will be created. Then navigate into your newly created project directory and follow the instructions in the `README.md` to complete the setup of your project.
+Follow the prompts to configure your project. Once completed, a new directory containing your project will be created. Then navigate into your newly created project directory and follow the instructions under https://gabrieltorresgamez.github.io/gabocutter/tutorial/ to complete the setup of your project.
 
 ## Acknowledgements
 

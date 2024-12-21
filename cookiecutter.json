@@ -4,5 +4,5 @@
     "author_github_handle": "example",
     "project_name": "example-project",
     "project_slug": "{{cookiecutter.project_name|lower|replace('-', '_')}}",
-    "project_description": "A short description of the project."
+    "project_description": "A short description of the project"
 }

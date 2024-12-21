@@ -45,7 +45,7 @@ git remote add origin git@github.com:<github_author_handle>/<project_name>.git
 git push -u origin main
 ```
 
-### Step 5: Set Up Your Development Environment
+## Step 5: Set Up Your Development Environment
 
 Initially, the CI/CD pipeline will fail for this reason:
 
@@ -57,7 +57,7 @@ To fix that, we first install the environment with:
 make install
 ```
 
-This will generate the `uv.lock` file
+This will generate the `uv.lock` file. You should commit and push this file.
 
 ## Step 6: Enable your documentation
 
