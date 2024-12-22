@@ -1,39 +1,27 @@
-This modern Cookiecutter template is designed to kickstart Python projects with all essential tools for development and testing. Tailored for data science use cases, it offers the following features:
+# gabocutter
 
-- [uv](https://docs.astral.sh/uv/) for dependency management
-- CI/CD with [GitHub Actions](https://github.com/features/actions)
-- Code quality with [ruff](https://github.com/charliermarsh/ruff)
-- Testing and coverage with [pytest](https://docs.pytest.org/en/7.1.x/)
-- Documentation with [MkDocs](https://www.mkdocs.org/)
+[![Build status](https://img.shields.io/github/actions/workflow/status/gabrieltorresgamez/gabocutter/main.yml?branch=main)](https://github.com/gabrieltorresgamez/gabocutter/actions/workflows/main.yml?query=branch%3Amain)
+[![Commit activity](https://img.shields.io/github/commit-activity/m/gabrieltorresgamez/gabocutter)](https://img.shields.io/github/commit-activity/m/gabrieltorresgamez/gabocutter)
+[![License](https://img.shields.io/github/license/gabrieltorresgamez/gabocutter)](https://img.shields.io/github/license/gabrieltorresgamez/gabocutter)
 
----
 
-<p align="center">
-  <a href="https://gabrieltorresgamez.github.io/gabocutter/">Documentation</a> - <a href="https://github.com/gabrieltorresgamez/gabocutter-example">Example</a>
-</p>
+`gabocutter` is a modern Cookiecutter template designed to streamline the setup of Python projects with essential development and testing tools. Tailored for data science workflows, this template includes the following features:
 
----
+- **🔗 Efficient dependency management** with [uv](https://docs.astral.sh/uv/)  
+- **🚀 CI/CD** powered by [GitHub Actions](https://github.com/features/actions)  
+- **🔍 Code quality** enforcement using [ruff](https://github.com/charliermarsh/ruff)  
+- **🧪 Testing & coverage** with [pytest](https://docs.pytest.org/en/7.1.x/)  
+- **📚 Documentation** generation via [MkDocs](https://www.mkdocs.org/)
+
+## Resources
+
+- 📖 **[Documentation](https://gabrieltorresgamez.github.io/gabocutter/)**
+- 💡 **[Example Repository](https://github.com/gabrieltorresgamez/gabocutter-example)**
 
 ## Quickstart
 
-On your local machine, navigate to the directory in which you want to
-create a project directory, and run the following command:
-
-```bash
-uvx cookiecutter https://github.com/gabrieltorresgamez/gabocutter.git
-```
-
-or if you don't have `uv` installed yet:
-
-```bash
-pip install cookiecutter
-cookiecutter https://github.com/gabrieltorresgamez/gabocutter.git
-```
-
-Follow the prompts to configure your project. Once completed, a new directory containing your project will be created. Then navigate into your newly created project directory and follow the instructions under https://gabrieltorresgamez.github.io/gabocutter/tutorial/ to complete the setup of your project.
+To get started, follow the tutorial at [https://gabrieltorresgamez.github.io/gabocutter/tutorial/](https://gabrieltorresgamez.github.io/gabocutter/tutorial/).
 
 ## Acknowledgements
 
-This project is based on [Florian Maas's](https://github.com/fpgmaas)
-[cookiecutter-uv](https://github.com/fpgmaas/cookiecutter-uv)
-repository ❤️. It has been simplified and adjusted to my personal preferences.
+This project is based on the work of [Florian Maas](https://github.com/fpgmaas) and his [cookiecutter-uv](https://github.com/fpgmaas/cookiecutter-uv) template ❤️. It has been simplified and customized to fit my personal preferences.

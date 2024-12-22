@@ -1,8 +1,8 @@
-# Unittesting with Pytest
+# Unittests with Pytest
 
-[pytest](https://docs.pytest.org/en/7.1.x/) is automatically added to
-the environment. There will be a template unittest in the `tests`
-directory upon creation of the project, which can be run with
+[pytest](https://docs.pytest.org/en/7.1.x/) is automatically included in the environment. A template test file will be created in the `tests` directory when the project is generated.
+
+To run the tests, simply use the following command:
 
 ```bash
 make test

@@ -1,76 +1,72 @@
-# Tutorial
+## Step 1: Install `uv`
 
-This page contains a complete tutorial on how to create your project.
-
-## Step 1: Install uv
-
-To start, we will need to install `uv`. The instructions to install uv can be found
-[here](https://docs.astral.sh/uv/#getting-started). For MacOS or Linux;
+Start by installing `uv`. You can find detailed installation instructions [here](https://docs.astral.sh/uv/#getting-started). For macOS or Linux, run the following command in your terminal:
 
 ```bash
 curl -LsSf https://astral.sh/uv/install.sh | sh
 ```
 
-## Step 2: Generate your project
+## Step 2: Generate Your Project
 
-On your local machine, navigate to the directory in which you want to
-create a project directory, and run the following command:
+Navigate to the directory where you want to create your project and run:
 
 ```bash
 uvx cookiecutter https://github.com/gabrieltorresgamez/gabocutter.git
 ```
 
-For an explanation of the prompt arguments, see
-[Prompt Arguments](prompt_arguments.md).
+Refer to the [Prompt Arguments documentation](prompt_arguments.md) for an explanation of the prompt inputs.
 
-## Step 3: Set up your Github repository
+## Step 3: Set Up Your Development Environment
 
-Create an empty [new repository](https://github.com/new) on Github. Give
-it a name that only contains alphanumeric characters and optionally `-`.
-DO NOT check any boxes under the option `Initialize this repository
-with`.
-
-## Step 4: Upload your project to Github
-
-Run the following commands, replacing `<project-name>` with the name
-that you also gave the Github repository and `<github_author_handle>`
-with your Github username.
-
-```bash
-cd <project_name>
-git init -b main
-git add .
-git commit -m "Init commit"
-git remote add origin git@github.com:<github_author_handle>/<project_name>.git
-git push -u origin main
-```
-
-## Step 5: Set Up Your Development Environment
-
-Initially, the CI/CD pipeline will fail for this reason:
-
-- The project does not yet contain a `uv.lock` file
-
-To fix that, we first install the environment with:
+Change into your project directory and set up the development environment by running:
 
 ```bash
 make install
 ```
 
-This will generate the `uv.lock` file. You should commit and push this file.
+This command will create a virtual environment, install all necessary dependencies, and generate a `uv.lock` file to lock dependency versions.
 
-## Step 6: Enable your documentation
+## Step 4: Create a GitHub Repository
 
-To enable your documentation on GitHub, first navigate to `Settings > Actions > General` in your repository, and under `Workflow permissions` select `Read and write permissions`.
+Create a new, empty repository on GitHub by visiting the [New Repository page](https://github.com/new). Ensure the repository name contains only alphanumeric characters and optionally `-`. Do **not** select any options under "Initialize this repository with."
 
-## Step 7: Enable your documentation ct'd
+## Step 5: Configure GitHub Repository Permissions
 
-Then navigate to `Settings > Code and Automation > Pages`. 
-You should see a notification saying ` Your site is ready to be published at https://<author_github_handle>.github.io/<project_name>/`.
+To enable MkDocs to deploy your documentation, update your repository's workflow permissions:
 
-To finalize deploying your documentation, under `Source`, select the branch `gh-pages`.
+1. Go to `Settings > Actions > General`.
+2. Under `Workflow permissions`, select **Read and write permissions**.
 
-## Step 8: You're all set!
+## Step 6: Upload Your Project to GitHub
 
-That's it! I hope this repository saved you a lot of manual configuration. If you have any improvement suggestions, feel
-free to raise an issue or open a PR on Github!
+Replace `<project_name>` with your project’s name and `<github_author_handle>` with your GitHub username in the commands below. Then run:
+
+```bash
+cd <project_name>
+git init -b main
+git add .
+git commit -m "Initial commit"
+git remote add origin git@github.com:<github_author_handle>/<project_name>.git
+git push -u origin main
+```
+
+## Step 7: Enable Documentation Deployment
+
+Once your project is uploaded, GitHub will automatically deploy your documentation to the `gh-pages` branch.
+
+To publish it on GitHub Pages:
+
+1. Go to `Settings > Pages`.
+2. Under **Source**, select the branch `gh-pages`.
+
+Next, navigate to `Settings > Code and Automation > Pages`. Finalize the setup by:
+
+1. Selecting **Deploy from a branch** under **Source**.
+2. Choosing the `gh-pages` branch and root folder `/`.
+3. Saving your changes.
+
+Your documentation will now be live.
+
+## All Done!
+
+Your project setup is complete! If this tutorial saved you time or you have ideas for improvement, feel free to raise an issue or open a PR on GitHub.

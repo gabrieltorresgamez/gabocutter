@@ -1,16 +1,13 @@
 # Makefile
 
-The generated repository will have a `Makefile` available. A list of all
-available commands that are available can be obtained by running
-`make help` in the terminal. Initially, if all features are selected, the following commands are
-available:
+The generated repository includes a `Makefile` with a set of available commands. To view the full list of commands, run `make help` in the terminal. If all features are selected, the following commands are available:
 
-```
+```bash
 install              Install the uv environment
 check                Lint code by running ruff
-test                 Test the code with pytest
+test                 Run tests with pytest
 build                Build wheel file using uv
-clean-build          clean build artifacts
-docs-test            Test if documentation can be built without warnings or errors
+clean-build          Remove build artifacts
+docs-test            Check if documentation builds without warnings or errors
 docs                 Build and serve the documentation
 ```

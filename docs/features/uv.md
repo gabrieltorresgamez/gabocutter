@@ -1,22 +1,18 @@
-# Dependency management with uv
+# Dependency Management with uv
 
-The generated repository will uses [uv](https://docs.astral.sh/uv/)
-for its dependency management. When you have created your repository
-using this cookiecutter template, a uv environment is pre-configured
-in `pyproject.toml`. All you need to do is add your
-project-specific dependencies with
+The generated repository uses [uv](https://docs.astral.sh/uv/) for managing dependencies. When you create a repository using this template, a `uv` environment is pre-configured in `pyproject.toml`. To add your project-specific dependencies, use the following command:
 
 ```bash
 uv add <package>
 ```
 
-and then install the environment with
+After adding your dependencies, install the environment with:
 
 ```bash
 uv sync
 ```
 
-You can then run commands within your virtual environment, for example:
+You can then run commands within your virtual environment. For example, to run tests with `pytest`, use:
 
 ```bash
 uv run python -m pytest

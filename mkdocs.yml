@@ -9,6 +9,7 @@ copyright: Maintained by <a href="https://torres.swiss">Gabriel Torres Gamez</a>
 
 nav:
   - Home: index.md
+  - Tutorial: tutorial.md
   - Features:
       - Linting: features/linting.md
       - Makefile: features/makefile.md
@@ -16,7 +17,6 @@ nav:
       - Testing with Pytest: features/pytest.md
       - Documentation with MkDocs: features/mkdocs.md
       - Containerization with Docker: features/docker.md
-  - Tutorial: tutorial.md
   - Prompt Arguments: prompt_arguments.md
 plugins:
   - search

@@ -1,41 +1,30 @@
 # Documentation with MkDocs
 
-To view the documentation locally, simply run
+To view the documentation locally, run the following command:
 
 ```bash
 make docs
 ```
 
-This command will generate and build your documentation, and start the server locally so you can access it at
-<http://localhost:8000>.
+This will generate and build your documentation, and start a local server at [http://localhost:8000](http://localhost:8000) where you can access it.
 
-## Enabling the documentation on GitHub
+## Documenting Docstrings
 
-To enable your documentation on GitHub, first navigate to `Settings > Actions > General` in your repository, and under `Workflow permissions` select `Read and write permissions`
+The generated project automatically converts your docstrings into well-structured documentation. By default, it uses the [Google](https://google.github.io/styleguide/pyguide.html) style for docstrings.
 
-Then, in your repository, navigate to `Settings > Code and Automation > Pages`.
-You should see a notification saying ` Your site is ready to be published at https://<author_github_handle>.github.io/<project_name>/`.
-
-To finalize deploying your documentation, under `Source`, select the branch `gh-pages`. Your documentation should then be live within a few minutes.
-
-## Documenting docstrings
-
-The generated project also converts all your docstrings into legible documentation. By default, the project is
-configured to work with [google](https://google.github.io/styleguide/pyguide.html) style docstrings.
-
-An example of a Google style docstring:
+Here’s an example of a Google-style docstring:
 
 ```python
 def function_with_pep484_type_annotations(param1: int, param2: str) -> bool:
-"""Example function with PEP 484 type annotations.
+    """Example function with PEP 484 type annotations.
 
-Args:
-    param1: The first parameter.
-    param2: The second parameter.
+    Args:
+        param1: The first parameter.
+        param2: The second parameter.
 
-Returns:
-    The return value. True for success, False otherwise.
+    Returns:
+        bool: True for success, False otherwise.
+    """
 ```
 
-For more examples, see
-[here](https://sphinxcontrib-napoleon.readthedocs.io/en/latest/example_google.html).
+For more examples, check out the [Napoleon documentation](https://sphinxcontrib-napoleon.readthedocs.io/en/latest/example_google.html).
