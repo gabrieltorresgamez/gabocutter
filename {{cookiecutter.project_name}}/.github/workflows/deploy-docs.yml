@@ -1,8 +1,11 @@
-name: main
-on: [push]
+name: deploy-docs
+on:
+  push:
+    branches:
+      - main
 
 jobs:
-  check-docs:
+  deploy-docs:
     runs-on: ubuntu-latest
     steps:
       - name: Check out
@@ -11,5 +14,5 @@ jobs:
       - name: Set up the environment
         uses: ./.github/actions/setup-python-env
 
-      - name: Check if documentation can be built
-        run: uv run mkdocs build -s
+      - name: Deploy documentation
+        run: uv run mkdocs gh-deploy --force

@@ -1,12 +1,10 @@
 # Linting and code quality
 
-Code can be linted and quality-checked with the command
+Code can be checked with the command
 
 ```bash
 make check
 ```
-
-Note that this requires the pre-commit hooks to be installed.
 
 This command will run the following tools:
 
@@ -64,46 +62,3 @@ preview = true
 [tool.ruff.per-file-ignores]
 "tests/*" = ["S101"]
 ```
-
-# mypy
-
-[mypy](https://mypy.readthedocs.io/en/stable/) is used for static type checking, and it's configuration and can be edited in `pyproject.toml`.
-
-```toml
-[tool.mypy]
-disallow_untyped_defs = true
-disallow_any_unimported = true
-no_implicit_optional = true
-check_untyped_defs = true
-warn_return_any = true
-warn_unused_ignores = true
-show_error_codes = true
-exclude = [
-    '\.venv',
-    '{{cookiecutter.project_name}}',
-    'tests'
-]
-```
-
-# deptry
-
-[deptry](https://github.com/fpgmaas/deptry) is used to check the code for dependency issues, and it can be configured by adding a `[tool.deptry]` section in `pyproject.toml`. For more information, see [this section](https://deptry.com/usage/#configuration) documentation of deptry.
-
-# Prettier
-
-[Prettier](https://prettier.io/) is used to format the markdown documentation, along with any json and yaml files.
-Its options can be configured in the included `.editorconfig` file or in greater detail by adding a `.prettierrc` file ([See Docs](https://prettier.io/docs/en/configuration)).
-
-```yaml
-[*]
-max_line_length = 120
-
-[*.json]
-indent_style = space
-indent_size = 4
-```
-
-## Github Actions
-
-If `include_github_actions` is set to `"y"`, code formatting is checked
-for every merge request, every merge to main, and every release.
