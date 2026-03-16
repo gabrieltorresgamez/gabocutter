@@ -15,7 +15,7 @@ plugins:
   - mkdocstrings:
       handlers:
         python:
-          paths: [{{cookiecutter.project_slug}}]
+          paths: [src]
 theme:
   name: material
   feature:

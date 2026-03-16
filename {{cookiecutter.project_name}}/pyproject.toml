@@ -33,11 +33,8 @@ dev = [
 ]
 
 [build-system]
-requires = ["setuptools >= 61.0"]
-build-backend = "setuptools.build_meta"
-
-[tool.setuptools]
-py-modules = ["{{cookiecutter.project_slug}}"]
+requires = ["uv_build>=0.10.10,<0.11.0"]
+build-backend = "uv_build"
 
 [tool.ruff]
 target-version = "py312"
