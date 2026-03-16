@@ -10,12 +10,12 @@ ADD uv.lock /app/uv.lock
 ADD pyproject.toml /app/pyproject.toml
 
 # Install dependencies
-RUN uv sync --frozen --no-install-project
+RUN uv sync --locked --no-install-project
 
 # Copy the project into the image
 ADD . /app
 
 # Sync the project
-RUN uv sync --frozen
+RUN uv sync --locked
 
-CMD [ "python", "{{cookiecutter.project_slug}}/foo.py"]
+CMD [ "uv", "run", "python", "-m", "{{cookiecutter.project_slug}}.foo"]

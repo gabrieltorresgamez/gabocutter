@@ -1,6 +1,16 @@
 # Containerization with Docker
 
-A simple `Dockerfile` is included in the repository. It installs **uv**, sets up the environment, and runs `foo.py` when executed.
+A simple `Dockerfile` is included in the repository. It installs `uv`, installs dependencies and the project with, and starts the default module with:
+
+```Dockerfile
+CMD ["uv", "run", "python", "-m", "<project_slug>.foo"]
+```
+
+If you prefer thin runnable wrappers, you can also call a script from `scripts/`:
+
+```Dockerfile
+CMD ["uv", "run", "python", "scripts/train.py"]
+```
 
 The Docker image can be built with:
 
